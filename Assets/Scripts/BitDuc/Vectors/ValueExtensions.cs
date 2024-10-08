@@ -7,13 +7,13 @@ namespace BitDuc.Vectors
     {
         public static float To(this float value, Func<float, float> map) => map(value);
 
-        public static Vector2 ToVector2(this float value, Func<float, (float x, float y)> map)
+        public static Vector2 To(this float value, Func<float, (float x, float y)> map)
         {
             var (x, y) = map(value);
             return new(x, y);
         }
 
-        public static Vector3 ToVector3(this float value, Func<float, (float x, float y, float z)> map)
+        public static Vector3 To(this float value, Func<float, (float x, float y, float z)> map)
         {
             var (x, y, z) = map(value);
             return new(x, y, z);

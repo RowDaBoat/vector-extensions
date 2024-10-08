@@ -5,7 +5,7 @@ namespace BitDuc.Vectors
 {
     public static class Vector3Extensions
     {
-        public static float ToValue(this Vector3 vector, Func<float, float, float, float> map) =>
+        public static float To(this Vector3 vector, Func<float, float, float, float> map) =>
             map(vector.x, vector.y, vector.z);
 
         public static Vector2 To(this Vector3 vector, Func<float, float, float, (float x, float y)> map)
