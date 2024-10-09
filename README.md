@@ -1,4 +1,4 @@
-# Vector Extensions
+# BitDuc Vector Extensions
 
 This package extends the default Unity types `Vector2`, `Vector3`, `Color` and also `float` by adding utility functions to simplify conversions between them.
 
